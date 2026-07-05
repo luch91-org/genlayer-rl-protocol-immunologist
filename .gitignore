@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Trained artifacts are attached to GitHub Releases, not committed to main.
+# logs/*.txt and docs/learning_curve.png ARE committed (they're part of the
+# reviewable deliverable); Q-tables are release-only because they churn on
+# every training run.
+agent/q_table.json
+agent/q_table_live.json
