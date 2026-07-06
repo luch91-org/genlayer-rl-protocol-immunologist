@@ -1,0 +1,39 @@
+{
+  "tx_hash": "0x44d2b2e8109c444b0bb9eeea34312e888fe336d65fb8922b62fb278d64f8e6d6",
+  "elapsed_s": 30,
+  "status": 5,
+  "result_code": 6,
+  "leader_address": "0xD7A0fD222883Ce92E34e369cF7588267b9A29c77",
+  "leader_model": "policy:prd-sonnet",
+  "leader_eq_payload": "\"{\\\"reason\\\": \\\"Pausing during a green alert is unnecessary paranoia that harms operational continuity. The treasury was already paused and remained paused on a green alert, indicating the protocol is being kept offline without justification. No funds were at risk, making this redundant action costly in terms of operational disruption with no defensive benefit.\\\", \\\"score\\\": 2.0}\"",
+  "leader_result": "{\"reason\":\"Pausing during a green alert is unnecessary paranoia that harms operational continuity. The treasury was already paused and remained paused on a green alert, indicating the protocol is being kept offline without justification. No funds were at risk, making this redundant action costly in terms of operational disruption with no defensive benefit.\",\"reward_x100\":200,\"round\":13}",
+  "votes_by_address": {
+    "0x54a7324a2d50F63F833e42878FB1bC0e8f398ca6": "agree",
+    "0x80256F808c893d55c2b46FD2A404344381533725": "idle",
+    "0xD7A0fD222883Ce92E34e369cF7588267b9A29c77": "agree",
+    "0xe1b64254a6522F00eEaC608EFd952369D05afc23": "agree",
+    "0xf571B7b426F6907e522e987724574990d019fef5": "idle"
+  },
+  "validators": [
+    {
+      "address": "0x54a7324a2d50F63F833e42878FB1bC0e8f398ca6",
+      "model": "policy:prd-sonnet",
+      "vote": "agree"
+    },
+    {
+      "address": "0xf571B7b426F6907e522e987724574990d019fef5",
+      "model": null,
+      "vote": "idle"
+    },
+    {
+      "address": "0x80256F808c893d55c2b46FD2A404344381533725",
+      "model": null,
+      "vote": "idle"
+    },
+    {
+      "address": "0xe1b64254a6522F00eEaC608EFd952369D05afc23",
+      "model": "openai/gpt-5.4",
+      "vote": "agree"
+    }
+  ]
+}
