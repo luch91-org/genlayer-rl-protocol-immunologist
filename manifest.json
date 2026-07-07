@@ -9,10 +9,10 @@
   },
   "provenance": {
     "repo": "genlayer-rl-protocol-immunologist",
-    "commit": "4095117",
+    "commit": "3e1423c",
     "sdk": "genlayer-py >=0.18.0",
     "runner_pin": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
-    "generated_at": "2026-07-06T13:59:30.487030+00:00"
+    "generated_at": "2026-07-07T11:27:08.715565+00:00"
   },
   "contract": {
     "address": "0x4213C3915a314B7A4ef926895A08638F54aE55dd",
@@ -8042,6 +8042,250 @@
     }
   },
   "runs": [
+    {
+      "id": "policy-rollout",
+      "mode": "mock",
+      "label": "Trained policy, deterministic replay",
+      "episodes": [
+        {
+          "i": 1,
+          "steps": [
+            {
+              "i": 0,
+              "action": {
+                "id": "do_nothing",
+                "label": "do nothing",
+                "args": {
+                  "type": "do_nothing"
+                }
+              },
+              "state_before": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 0
+              },
+              "state_after": {
+                "alert_level": "yellow",
+                "threat_active": true,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 1
+              },
+              "reward": 8.43,
+              "reward_kind": "deterministic",
+              "reason": "kept operations running smoothly on green"
+            },
+            {
+              "i": 1,
+              "action": {
+                "id": "rotate_signer",
+                "label": "rotate signer",
+                "args": {
+                  "type": "rotate_signer"
+                }
+              },
+              "state_before": {
+                "alert_level": "yellow",
+                "threat_active": true,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 1
+              },
+              "state_after": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 2
+              },
+              "reward": 6.17,
+              "reward_kind": "deterministic",
+              "reason": "rotated a signer as the threat trended"
+            },
+            {
+              "i": 2,
+              "action": {
+                "id": "do_nothing",
+                "label": "do nothing",
+                "args": {
+                  "type": "do_nothing"
+                }
+              },
+              "state_before": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 2
+              },
+              "state_after": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 3
+              },
+              "reward": 7.53,
+              "reward_kind": "deterministic",
+              "reason": "kept operations running smoothly on green"
+            },
+            {
+              "i": 3,
+              "action": {
+                "id": "do_nothing",
+                "label": "do nothing",
+                "args": {
+                  "type": "do_nothing"
+                }
+              },
+              "state_before": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 3
+              },
+              "state_after": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 4
+              },
+              "reward": 8.99,
+              "reward_kind": "deterministic",
+              "reason": "kept operations running smoothly on green"
+            },
+            {
+              "i": 4,
+              "action": {
+                "id": "do_nothing",
+                "label": "do nothing",
+                "args": {
+                  "type": "do_nothing"
+                }
+              },
+              "state_before": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 4
+              },
+              "state_after": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 5
+              },
+              "reward": 7.26,
+              "reward_kind": "deterministic",
+              "reason": "kept operations running smoothly on green"
+            },
+            {
+              "i": 5,
+              "action": {
+                "id": "do_nothing",
+                "label": "do nothing",
+                "args": {
+                  "type": "do_nothing"
+                }
+              },
+              "state_before": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 5
+              },
+              "state_after": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 6
+              },
+              "reward": 7.74,
+              "reward_kind": "deterministic",
+              "reason": "kept operations running smoothly on green"
+            },
+            {
+              "i": 6,
+              "action": {
+                "id": "do_nothing",
+                "label": "do nothing",
+                "args": {
+                  "type": "do_nothing"
+                }
+              },
+              "state_before": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 6
+              },
+              "state_after": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 7
+              },
+              "reward": 8.43,
+              "reward_kind": "deterministic",
+              "reason": "kept operations running smoothly on green"
+            },
+            {
+              "i": 7,
+              "action": {
+                "id": "do_nothing",
+                "label": "do nothing",
+                "args": {
+                  "type": "do_nothing"
+                }
+              },
+              "state_before": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 7
+              },
+              "state_after": {
+                "alert_level": "green",
+                "threat_active": false,
+                "treasury_balance": 1000000,
+                "hedged_amount": 0,
+                "is_paused": false,
+                "round": 8
+              },
+              "reward": 7.57,
+              "reward_kind": "deterministic",
+              "reason": "kept operations running smoothly on green"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "live-capture",
       "mode": "live",
