@@ -9,10 +9,10 @@
   },
   "provenance": {
     "repo": "genlayer-rl-protocol-immunologist",
-    "commit": "3e1423c",
+    "commit": "10d17d0",
     "sdk": "genlayer-py >=0.18.0",
     "runner_pin": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
-    "generated_at": "2026-07-07T11:27:08.715565+00:00"
+    "generated_at": "2026-07-08T08:33:18.029289+00:00"
   },
   "contract": {
     "address": "0x4213C3915a314B7A4ef926895A08638F54aE55dd",
@@ -8077,7 +8077,39 @@
               },
               "reward": 8.43,
               "reward_kind": "deterministic",
-              "reason": "kept operations running smoothly on green"
+              "reason": "kept operations running smoothly on green",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 60.007,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 76.076,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 54.91,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge small",
+                  "q": 24.834,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 24.087,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 132.877,
+                  "chosen": true
+                }
+              ]
             },
             {
               "i": 1,
@@ -8106,7 +8138,39 @@
               },
               "reward": 6.17,
               "reward_kind": "deterministic",
-              "reason": "rotated a signer as the threat trended"
+              "reason": "rotated a signer as the threat trended",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 27.142,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 33.491,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 129.63,
+                  "chosen": true
+                },
+                {
+                  "action": "hedge small",
+                  "q": 15.052,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 16.693,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 41.12,
+                  "chosen": false
+                }
+              ]
             },
             {
               "i": 2,
@@ -8135,7 +8199,39 @@
               },
               "reward": 7.53,
               "reward_kind": "deterministic",
-              "reason": "kept operations running smoothly on green"
+              "reason": "kept operations running smoothly on green",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 60.007,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 76.076,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 54.91,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge small",
+                  "q": 24.834,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 24.087,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 132.877,
+                  "chosen": true
+                }
+              ]
             },
             {
               "i": 3,
@@ -8164,7 +8260,39 @@
               },
               "reward": 8.99,
               "reward_kind": "deterministic",
-              "reason": "kept operations running smoothly on green"
+              "reason": "kept operations running smoothly on green",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 60.007,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 76.076,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 54.91,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge small",
+                  "q": 24.834,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 24.087,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 132.877,
+                  "chosen": true
+                }
+              ]
             },
             {
               "i": 4,
@@ -8193,7 +8321,39 @@
               },
               "reward": 7.26,
               "reward_kind": "deterministic",
-              "reason": "kept operations running smoothly on green"
+              "reason": "kept operations running smoothly on green",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 60.007,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 76.076,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 54.91,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge small",
+                  "q": 24.834,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 24.087,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 132.877,
+                  "chosen": true
+                }
+              ]
             },
             {
               "i": 5,
@@ -8222,7 +8382,39 @@
               },
               "reward": 7.74,
               "reward_kind": "deterministic",
-              "reason": "kept operations running smoothly on green"
+              "reason": "kept operations running smoothly on green",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 60.007,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 76.076,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 54.91,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge small",
+                  "q": 24.834,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 24.087,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 132.877,
+                  "chosen": true
+                }
+              ]
             },
             {
               "i": 6,
@@ -8251,7 +8443,39 @@
               },
               "reward": 8.43,
               "reward_kind": "deterministic",
-              "reason": "kept operations running smoothly on green"
+              "reason": "kept operations running smoothly on green",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 60.007,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 76.076,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 54.91,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge small",
+                  "q": 24.834,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 24.087,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 132.877,
+                  "chosen": true
+                }
+              ]
             },
             {
               "i": 7,
@@ -8280,7 +8504,39 @@
               },
               "reward": 7.57,
               "reward_kind": "deterministic",
-              "reason": "kept operations running smoothly on green"
+              "reason": "kept operations running smoothly on green",
+              "policy": [
+                {
+                  "action": "pause",
+                  "q": 60.007,
+                  "chosen": false
+                },
+                {
+                  "action": "unpause",
+                  "q": 76.076,
+                  "chosen": false
+                },
+                {
+                  "action": "rotate signer",
+                  "q": 54.91,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge small",
+                  "q": 24.834,
+                  "chosen": false
+                },
+                {
+                  "action": "hedge large",
+                  "q": 24.087,
+                  "chosen": false
+                },
+                {
+                  "action": "do nothing",
+                  "q": 132.877,
+                  "chosen": true
+                }
+              ]
             }
           ]
         }
